@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--<script type="text/javascript"> This is for javascript 
+      const rootElement = document.getElementById("root");
+      const element = document.createElement("h1");
+      element.textContent = "Hello World!";
+      element.classList.add("greeting");
+      rootElement.appendChild(element);
+    </script>-->
+
+    <!--<script type="module">This is for react
+      const styling = {
+        className: "greeting",
+        children: "Hey This is Vaishnavi",
+      };
+      const Tag = "h1";
+      const Element = React.createElement(Tag, styling);
+      ReactDOM.render(Element, document.getElementById("root"));
+    </script>-->
+
+    <!-- <script type="text/babel"> This is convert JSX to javascript 
+      const Element = <h1 className="greeting">Hello World</h1>;
+      ReactDOM.render(Element, document.getElementById("root"));
+    </script>-->
+
+    <!--<script type="text/babel">
+      const className = "greeting";
+      const message = "This is Embedded Variables Syntax";
+      const Element = <h1 className={className}>{message} </h1>;
+      ReactDOM.render(Element, document.getElementById("root"));
+    </script>-->
+
+    <!--<script type="text/babel">
+      const gettingUserDetails = (user) => {
+        return `Hii ${user.firstName} your Profession ${user.Profession} and your salary is ${user.salary}`;
+      };
+      const user = {
+        firstName: "Vaishnavi",
+        Profession: "Software Development Engineer1",
+        salary: "15 LPA",
+      };
+      const Element = <h1 className="greeting">{gettingUserDetails(user)}</h1>;
+      ReactDOM.render(Element, document.getElementById("root"));
+    </script>-->
+
+    <!--<script type="text/babel">
+      const Element = (
+        <div>
+          <h1 className="greeting">Hello World</h1>
+          <p>Good to See You</p>
+        </div>
+      );
+      ReactDOM.render(Element, document.getElementById("root"));
+    </script>-->
+
+    <script type="text/babel" src="index.js"></script>
+  </body>
+</html>
